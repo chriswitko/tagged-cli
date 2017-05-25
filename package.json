@@ -1,0 +1,44 @@
+{
+  "name": "tagged-cli",
+  "version": "1.0.0",
+  "description": "Node.js exam repo",
+  "main": "bin",
+  "bin": {
+    "farm": "bin/cli/index.js"
+  },
+  "author": {
+    "email": "chris.witko@gmail.com",
+    "name": "Chris Witko",
+    "url": "https://github.com/chriswitko"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "cli",
+    "xteam",
+    "tags",
+    "json"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "rm -rf _temp_ && nyc mocha",
+    "start": "node bin/cli",
+    "debug": "DEBUG=1 node bin/cli"
+  },
+  "devDependencies": {
+    "coveralls": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "sinon-mocha": "0.0.3"
+  },
+  "license": "MIT"
+}

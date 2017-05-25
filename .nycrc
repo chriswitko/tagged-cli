@@ -1,0 +1,10 @@
+{
+  "include": [
+    "bin/**/*.js"
+  ],
+  "exclude": [
+    "bin/**/*.spec.js",
+    "bin/cli/index.js"
+  ],  
+  "all": true
+}
